@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tetris</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="layout">
+      <section class="game">
+        <canvas id="tetris" width="300" height="600"></canvas>
+      </section>
+      <section class="sidebar">
+        <h1>Tetris</h1>
+        <p>Usa le frecce per muovere e ruotare il pezzo. Premi <kbd>Spazio</kbd> per farlo cadere rapidamente.</p>
+        <dl class="stats">
+          <div>
+            <dt>Punteggio</dt>
+            <dd id="score">0</dd>
+          </div>
+          <div>
+            <dt>Linee</dt>
+            <dd id="lines">0</dd>
+          </div>
+          <div>
+            <dt>Livello</dt>
+            <dd id="level">0</dd>
+          </div>
+        </dl>
+        <button id="restart" type="button">Ricomincia</button>
+      </section>
+    </main>
+    <script src="tetris.js"></script>
+  </body>
+</html>
